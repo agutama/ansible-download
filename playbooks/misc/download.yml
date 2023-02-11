@@ -1,0 +1,10 @@
+---
+
+- name: Run multiple roles
+  hosts: "{{ HOSTS | default([])}}"
+  become: false
+  gather_facts: false
+
+  roles:
+    - role: "roles/zip"
+    - role: "roles/copy"

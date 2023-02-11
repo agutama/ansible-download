@@ -1,0 +1,27 @@
+---
+- hosts: "{{ HOSTS }}"
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Install important packages
+      vars:
+        ansible_python_interpreter: /usr/bin/python3
+      package:
+        name:
+          - htop
+          - tmux
+          - vim
+          - curl
+          - python3-setuptools
+          - python3-pip
+          - zip
+        state: present
+
+    # - name: Install docker module for python
+    #   vars:
+    #     ansible_python_interpreter: /usr/bin/python3
+    #   pip:
+    #     name:
+    #       - docker
+    #       - docker-compose

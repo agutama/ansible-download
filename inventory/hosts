@@ -1,0 +1,5 @@
+[vbox]
+test01 ansible_host=10.100.1.103 ansible_ssh_port=22
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3

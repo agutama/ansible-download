@@ -8,3 +8,4 @@
   roles:
     - role: "roles/zip"
     - role: "roles/copy"
+    - role: "roles/sendgcs"

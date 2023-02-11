@@ -1,0 +1,6 @@
+---
+- name: Zip directory on remote host
+  archive:
+    path: "/etc/nginx"
+    dest: "/tmp/test/nginx.zip"
+    format: zip

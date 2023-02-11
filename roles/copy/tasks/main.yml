@@ -1,0 +1,7 @@
+---
+- name: Copy directory from remote to local
+  synchronize:
+    src: "/tmp/test"
+    dest: "/tmp"
+    mode: pull
+

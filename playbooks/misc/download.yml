@@ -1,6 +1,6 @@
 ---
 
-- name: Run multiple roles
+- name: Download files from remote
   hosts: "{{ HOSTS | default([])}}"
   become: false
   gather_facts: false
